@@ -57,8 +57,16 @@
   - `output.tf` this file will contain the output variables, to provide the resource information once done with creation
   - `settings.tf` this file will contain the terraform version which support the current script. 
   - `terraform.tfvar` this file will contain the hard-coded variable value. 
-  - `main.tf` this file initializeall resource modules
   - `immutable.tf` this file will contain the immutable ifra code
-  
 
- 
+## Resource group 
+   - In main.tf file we need to call the resouce group module and variable values are hard-coded in `terraform.tfvar` file.
+
+   <img width="1126" alt="Screenshot 2023-05-29 at 3 00 43 PM" src="https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/5dbb97e1-2459-44b1-b643-755fb9e1123f">
+   
+## Vnet 
+   - 
+
+
+
+
