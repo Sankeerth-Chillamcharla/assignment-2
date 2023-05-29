@@ -72,9 +72,15 @@
 
    <img width="1227" alt="Screenshot 2023-05-29 at 3 57 22 PM" src="https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/61a76513-9efd-4e45-a9ea-23f9464766d2">
    
-   - Based on the vnet, we are going th create the subnet, in our case we need 3 subntes, 3 Network security groups and it NSG asscioation with subntes, along with NSG rules. 
+   - Based on the vnet, we are going th create the subnet, in our case we need 3 subntes, 3 Network security groups and NSG asscioation with subntes, along with NSG rules. 
 
-   ### Subnet 
+   ### Subnet Creation
   ![Screenshot 2023-05-29 at 4 03 43 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/6f98276d-c7c5-4875-94b0-9a6aee866125)
-  ### NSG 
+   ### NSG Creation
+  ![Screenshot 2023-05-29 at 4 06 13 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/b8d36b12-7f41-406f-9abc-745b250e4ce6)
+   ### NSG Asscioation with subnets
+  ![Screenshot 2023-05-29 at 4 07 16 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/8d98f9dd-3e1a-48e5-aabd-ced883a60aae)
+
+   
+ 
 
