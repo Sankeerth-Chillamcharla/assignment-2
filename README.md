@@ -85,6 +85,14 @@
 
   ![Screenshot 2023-05-29 at 4 12 22 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/6cfd60ee-53c9-4a66-94aa-7ce2e5075a3f) ![Screenshot 2023-05-29 at 4 11 41 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/8da95c80-3c92-4adc-a2f0-cc504d8c432d) 
 
+## Load Balancer
+
+   - To Create a load balancer we required, Public IP for front-end configuration, backend pool, health probe, load balancer rules. modue are developed for each and every resource.
+    
+     ![Screenshot 2023-05-29 at 5 00 04 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/e8eeec42-208f-4779-9fe3-fe4f46c4bcb9)
+   - 
+
+ 
    
  
 
