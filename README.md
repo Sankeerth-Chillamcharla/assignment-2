@@ -60,13 +60,21 @@
   - `immutable.tf` this file will contain the immutable ifra code
 
 ## Resource group 
-   - In main.tf file we need to call the resouce group module and variable values are hard-coded in `terraform.tfvar` file.
 
+   - Using the resource group module to creaet the multiple Resource groups, but its required the group name and location, these two variable values are hardcoded in the `terraform.tfvar` file.
+   - Resource group name `RG-15FIVE-WBAPP`, its  module name `ResourceGroup`, these are the reference `module.ResourceGroup.rg-name` and `module.ResourceGroup.rg-location` to call output variables to refer another modules
+   
    <img width="1126" alt="Screenshot 2023-05-29 at 3 00 43 PM" src="https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/5dbb97e1-2459-44b1-b643-755fb9e1123f">
    
 ## Vnet 
-   - 
+   - Vnet module contain the child module as subnet, nsg and nsg-rules. To create Vnet we requires resource resource group, location and cidr range, for resource group name and location values are calling form resource group module. 
+   - CIDE range value is defind in `terraform.tfvar`
 
+   <img width="1227" alt="Screenshot 2023-05-29 at 3 57 22 PM" src="https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/61a76513-9efd-4e45-a9ea-23f9464766d2">
+   
+   - Based on the vnet, we are going th create the subnet, in our case we need 3 subntes, 3 Network security groups and it NSG asscioation with subntes, along with NSG rules. 
 
-
+   ### Subnet 
+  ![Screenshot 2023-05-29 at 4 03 43 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/6f98276d-c7c5-4875-94b0-9a6aee866125)
+  ### NSG 
 
