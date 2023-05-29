@@ -49,9 +49,14 @@
   
 ## Usage
 
+- Resource block code has been developed in to parent and child modules, along with modules we have another `.tf` file are available in project directory
 
-
-
+  - `provider.tf` this file will contain the all providers information whic we are using in our project
+  - `variable.tf` this file will contain the input variables to pass certain values from outside of the configuration or module.
+  - `locals.tf` this file will contain the local variables are declared using the locals block. The values can be hard-coded or be a reference to another variable or resource.
+  - `output.tf` this file will contain the output variables, to provide the resource information once done with creation
+  - `settings.tf` this file will contain the terraform version which support the current script. 
+  - `terraform.tfvar` this file will contain the hard-coded variable value. 
   
 
 
