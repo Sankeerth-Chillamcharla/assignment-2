@@ -57,7 +57,8 @@
   - `output.tf` this file will contain the output variables, to provide the resource information once done with creation
   - `settings.tf` this file will contain the terraform version which support the current script. 
   - `terraform.tfvar` this file will contain the hard-coded variable value. 
+  - `main.tf` this file initializeall resource modules
+  - `immutable.tf` this file will contain the immutable ifra code
   
-
 
  
