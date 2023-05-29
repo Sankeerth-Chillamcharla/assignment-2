@@ -80,6 +80,10 @@
   ![Screenshot 2023-05-29 at 4 06 13 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/b8d36b12-7f41-406f-9abc-745b250e4ce6)
    ### NSG Asscioation with subnets
   ![Screenshot 2023-05-29 at 4 07 16 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/8d98f9dd-3e1a-48e5-aabd-ced883a60aae)
+   ### Nsg Rules Creation
+   - Nsg rules are listed in the `locals.tf`, this file and ngs-rules module are use full to create nsg-rules
+
+  ![Screenshot 2023-05-29 at 4 12 22 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/6cfd60ee-53c9-4a66-94aa-7ce2e5075a3f) ![Screenshot 2023-05-29 at 4 11 41 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/8da95c80-3c92-4adc-a2f0-cc504d8c432d) 
 
    
  
