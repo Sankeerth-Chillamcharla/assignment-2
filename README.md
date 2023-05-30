@@ -58,6 +58,34 @@
   - `settings.tf` this file will contain the terraform version which support the current script. 
   - `terraform.tfvar` this file will contain the hard-coded variable value. 
   - `immutable.tf` this file will contain the immutable ifra code
+  
+## List for modules 
+   | Module Name | Description | 
+| --- | --- | 
+| module.ResourceGroup.azurerm_resource_group.az-rg | Resource Group | 
+| module.vnet.azurerm_virtual_network.vnet  | Vnet | 
+| module.appsubnet.azurerm_subnet.subnets   | App Subnet | 
+| module.dbsubnet.azurerm_subnet.subnets | DB Subnet | 
+| module.jump-subnet.azurerm_subnet.subnets   | JumpBox Subnet | 
+| module.jump-nsg.azurerm_network_security_group.appnsg | Jumpbox NSG | 
+| module.db-nsg.azurerm_network_security_group.appnsg  | App NSG | 
+| module.app-nsg.azurerm_network_security_group.appnsg | Db NSG|
+| module.app-nsg-rules["http"].azurerm_network_security_rule.nsg-rules | HTTP NSG Rule -> App NSG|
+| module.app-nsg-rules["ssh"].azurerm_network_security_rule.nsg-rules  | SSH NSG Rule -> App NSG|
+| module.jump-nsg-rules["ssh"].azurerm_network_security_rule.nsg-rules | SSH NSG  Rule -> Jumpbox NSG |
+| module.db-nsg-rules["psql"].azurerm_network_security_rule.nsg-rules  | TCP NSG  Rule -> DB NSG |
+| module.public-ip.azurerm_public_ip.pip | Front End Public IP |
+| module.lb.azurerm_lb.lb | Load Balancer|
+| module.lb-probe.azurerm_lb_probe.vmss-probe | Load Balancer Health Probe |
+| module.lb-backend-pool.azurerm_lb_backend_address_pool.back-end-pool |  Backend Pool|
+| module.lb-lb-rules.azurerm_lb_rule.web_lb_rule_app1 | Load Balancer Rules|
+
+
+
+
+
+
+
 
 ## Resource group 
 
@@ -91,7 +119,15 @@
     
      ![Screenshot 2023-05-29 at 5 00 04 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/e8eeec42-208f-4779-9fe3-fe4f46c4bcb9)
    - 
+## VM Scale Set
 
+## JumpBox
+
+## Storage Account
+
+## Container
+
+## Postgresql 
  
    
  
