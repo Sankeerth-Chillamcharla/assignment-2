@@ -8,7 +8,7 @@
 ## Prerequisite
 
 - Terraform Installation and setup, refer the [Terraform installation](https://learn.microsoft.com/en-us/azure/developer/terraform/quickstart-configure)
-- Make sure that we have a active azure account wih admin right
+- Make sure that we have a active azure account with admin rights
 - Terraform to Azure Authentication
   - Method 1
       - To Install Azure CLI, refer [install the Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) 
@@ -29,7 +29,7 @@
        
 ## Store Terraform state in Azure Storage 
 
-- Login to Azure portal and click on cloud shell and upload the `remote-state.sh` file and change the filr permission, to configure the Azure storage account and container to store the remote state file.
+- Login to Azure portal and click on cloud shell and upload the `remote-state.sh` file and change the file permission, to configure the Azure storage account and container to store the remote state file.
 - Ouput of `remote-state.sh` 
 
 ![Screenshot 2023-05-29 at 1 05 34 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/c24cc1d6-2a12-40dc-82db-7f0c042bfebd)
@@ -51,7 +51,7 @@
 
 - Resource block code has been developed in to parent and child modules, along with modules we have another `.tf` file are available in project directory
 
-  - `provider.tf` this file will contain the all providers information whic we are using in our project
+  - `provider.tf` this file will contain all the providers information which we are used in our project
   - `variable.tf` this file will contain the input variables to pass certain values from outside of the configuration or module.
   - `locals.tf` this file will contain the local variables are declared using the locals block. The values can be hard-coded or be a reference to another variable or resource.
   - `output.tf` this file will contain the output variables, to provide the resource information once done with creation
@@ -88,7 +88,11 @@
 | module.new-jump-host-public-ip.azurerm_public_ip.pip | Jumpbox Public IP | 
 | module.nic-jump-jumpbox.azurerm_network_interface.jumpbox | Jump Box NIC |
 
-## Infra Creation 
+## Remote State file result
+
+<img width="1440" alt="Screenshot 2023-05-30 at 12 30 44 PM" src="https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/f5494f99-889a-4061-b5e0-131b6598b20f">
+
+## Infra Creation Result
 
 ![Screenshot 2023-05-30 at 10 48 40 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/c8b95eaa-16fa-49fe-9a96-218374c8a48a)
 
@@ -169,20 +173,20 @@
 ```
 ## Resource group 
 
-   - Using the resource group module to creaet the multiple Resource groups, but its required the group name and location, these two variable values are hardcoded in the `terraform.tfvar` file.
+   - Using the resource group module to create the multiple Resource groups, but its required the group name and location, these two variable values are hardcoded in the `terraform.tfvar` file.
    - Resource group name `RG-15FIVE-WBAPP`, its  module name `ResourceGroup`, these are the reference `module.ResourceGroup.rg-name` and `module.ResourceGroup.rg-location` to call output variables to refer another modules
    
    <img width="1126" alt="Screenshot 2023-05-29 at 3 00 43 PM" src="https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/5dbb97e1-2459-44b1-b643-755fb9e1123f">
    
 ## Vnet 
-   - Vnet module contain the child module as subnet, nsg and nsg-rules. To create Vnet we requires resource resource group, location and cidr range, for resource group name and location values are calling form resource group module. 
+   - Vnet module contain the child module as subnet, nsg and nsg-rules. To create Vnet we requires resource group, location and cidr range, for resource group name and location values are calling form resource group module. 
    - CIDE range value is defind in `terraform.tfvar`
 
    <img width="1227" alt="Screenshot 2023-05-29 at 3 57 22 PM" src="https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/61a76513-9efd-4e45-a9ea-23f9464766d2">
    
-   - Based on the vnet, we are going th create the subnet, in our case we need 3 subntes, 3 Network security groups and NSG asscioation with subntes, along with NSG rules. 
+   - Based on the vnet, we are going the create the subnets, in our case we need to creste 3 subntes, 3 Network security groups and 3 NSG's asscioation with 3 subntes, along with NSG rules. 
 
-   ### Subnet Creation
+   ### Subnets Creation
   ![Screenshot 2023-05-29 at 4 03 43 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/6f98276d-c7c5-4875-94b0-9a6aee866125)
    ### NSG Creation
   ![Screenshot 2023-05-29 at 4 06 13 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/b8d36b12-7f41-406f-9abc-745b250e4ce6)
@@ -195,7 +199,7 @@
 
 ## Load Balancer
 
-   - To Create a load balancer we required, Public IP for front-end configuration, backend pool, health probe, load balancer rules. modue are developed for each and every resource.
+   - To Create a load balancer we required, Public IP for front-end configuration, backend pool, health probe, load balancer rules. modules are developed for each and every resource.
    ![Screenshot 2023-05-30 at 11 05 32 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/1471ba20-effb-4e49-acf3-23a6fa5e9ccd)
 
 ## VM Scale Set
