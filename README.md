@@ -121,23 +121,23 @@
 ## Load Balancer
 
    - To Create a load balancer we required, Public IP for front-end configuration, backend pool, health probe, load balancer rules. modue are developed for each and every resource.
-    
-     ![Screenshot 2023-05-29 at 5 00 04 PM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/e8eeec42-208f-4779-9fe3-fe4f46c4bcb9)
-   - 
+   ![Screenshot 2023-05-30 at 11 05 32 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/1471ba20-effb-4e49-acf3-23a6fa5e9ccd)
+
 ## VM Scale Set
 
-![Screenshot 2023-05-30 at 10 38 08 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/edfa2e25-b186-4571-b7e0-34f12f064c53)
+   ![Screenshot 2023-05-30 at 10 38 08 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/edfa2e25-b186-4571-b7e0-34f12f064c53)
 
 ## Storage Account and Container
 
-![Screenshot 2023-05-30 at 10 40 50 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/2e04bb34-84d6-4ddf-911a-ffabdc7210a2)
+   ![Screenshot 2023-05-30 at 10 40 50 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/2e04bb34-84d6-4ddf-911a-ffabdc7210a2)
 
 ## Postgresql 
 
-![Screenshot 2023-05-30 at 10 45 31 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/482c0161-bedc-4090-b911-259723440dfb)
+   ![Screenshot 2023-05-30 at 10 45 31 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/482c0161-bedc-4090-b911-259723440dfb)
 
 ## JumpBox
-![Screenshot 2023-05-30 at 10 43 53 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/274831af-50b6-4e20-bc84-b120da2c7af1)
+
+   ![Screenshot 2023-05-30 at 10 43 53 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/274831af-50b6-4e20-bc84-b120da2c7af1)
 
 
 
