@@ -79,13 +79,18 @@
 | module.lb-probe.azurerm_lb_probe.vmss-probe | Load Balancer Health Probe |
 | module.lb-backend-pool.azurerm_lb_backend_address_pool.back-end-pool |  Backend Pool|
 | module.lb-lb-rules.azurerm_lb_rule.web_lb_rule_app1 | Load Balancer Rules|
+| module.vm-scale-set.azurerm_linux_virtual_machine_scale_set.vm-scale-set | VM Scale Set | 
+| module.psql.azurerm_postgresql_flexible_server.psql |  PostgreSql Flexible Server |
+| module.psql.random_password.db-pass | DB Password |
+| module.sac.azurerm_storage_container.saccontainer | Blob Container |
+| module.storage-account.azurerm_storage_account.sa | Storage Account |
+| module.jumpbox.azurerm_virtual_machine.virtualmachine | Jumpbox Virtual Machine |
+| module.new-jump-host-public-ip.azurerm_public_ip.pip | Jumpbox Public IP | 
+| module.nic-jump-jumpbox.azurerm_network_interface.jumpbox | Jump Box NIC |
 
+## Infra Creation 
 
-
-
-
-
-
+![Screenshot 2023-05-30 at 10 48 40 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/c8b95eaa-16fa-49fe-9a96-218374c8a48a)
 
 ## Resource group 
 
@@ -121,13 +126,22 @@
    - 
 ## VM Scale Set
 
-## JumpBox
+![Screenshot 2023-05-30 at 10 38 08 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/edfa2e25-b186-4571-b7e0-34f12f064c53)
 
-## Storage Account
+## Storage Account and Container
 
-## Container
+![Screenshot 2023-05-30 at 10 40 50 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/2e04bb34-84d6-4ddf-911a-ffabdc7210a2)
 
 ## Postgresql 
+
+![Screenshot 2023-05-30 at 10 45 31 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/482c0161-bedc-4090-b911-259723440dfb)
+
+## JumpBox
+![Screenshot 2023-05-30 at 10 43 53 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/274831af-50b6-4e20-bc84-b120da2c7af1)
+
+
+
+
  
    
  
