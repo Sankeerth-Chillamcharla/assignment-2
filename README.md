@@ -92,6 +92,81 @@
 
 ![Screenshot 2023-05-30 at 10 48 40 AM](https://github.com/Sankeerth-Chillamcharla/assignment-2/assets/46291282/c8b95eaa-16fa-49fe-9a96-218374c8a48a)
 
+## Project Template Structure 
+```
+├── locals.tf
+├── main.tf
+├── modules
+│   ├── LoadBalancer
+│   │   ├── back-end-pool
+│   │   │   ├── main.tf
+│   │   │   ├── output.tf
+│   │   │   └── variable.tf
+│   │   ├── lb-rules
+│   │   │   ├── main.tf
+│   │   │   ├── outpout.tf
+│   │   │   └── variable.tf
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   ├── pip
+│   │   │   ├── main.tf
+│   │   │   ├── ouput.tf
+│   │   │   └── variable.tf
+│   │   ├── probe
+│   │   │   ├── main.tf
+│   │   │   ├── outpout.tf
+│   │   │   └── variable.tf
+│   │   └── variable.tf
+│   ├── ResourceGroup
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variables.tf
+│   ├── psql
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variable.tf
+│   ├── scale-set
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variable.tf
+│   ├── storage
+│   │   ├── container
+│   │   │   ├── main.tf
+│   │   │   ├── output.tf
+│   │   │   └── variable.tf
+│   │   ├── main.tf
+│   │   ├── output.tf
+│   │   └── variable.tf
+│   ├── vm
+│   │   ├── main.tf
+│   │   ├── ouput.tf
+│   │   └── variable.tf
+│   └── vnet
+│       ├── main.tf
+│       ├── nic
+│       │   ├── main.tf
+│       │   ├── output.tf
+│       │   └── variable.tf
+│       ├── nsg
+│       │   ├── main.tf
+│       │   ├── output.tf
+│       │   └── variable.tf
+│       ├── nsg-rules
+│       │   ├── main.tf
+│       │   └── variables.tf
+│       ├── output.tf
+│       ├── subnets
+│       │   ├── main.tf
+│       │   ├── output.tf
+│       │   └── variable.tf
+│       └── variables.tf
+├── output.tf
+├── provider.tf
+├── remote-state.sh
+├── settings.tf
+├── terraform.tfvars
+└── variables.tf
+```
 ## Resource group 
 
    - Using the resource group module to creaet the multiple Resource groups, but its required the group name and location, these two variable values are hardcoded in the `terraform.tfvar` file.
