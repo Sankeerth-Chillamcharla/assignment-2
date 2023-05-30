@@ -519,5 +519,5 @@ module "db-nsg-rules" {
   nsgr-source_address_prefix       = each.value.source_address_prefix
   nsgr-destination_address_prefix  = each.value.destination_address_prefix
   nsgr-resource_group_name         = module.ResourceGroup.rg-name
-  nsgr-network_security_group_name = module.jump-nsg.nsg-name
+  nsgr-network_security_group_name = module.db-nsg.nsg-name
 }
